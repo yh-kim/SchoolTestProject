@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".project0316.ButtonTestActivity">
+
+    <Button
+        android:id="@+id/btn1"
+        android:text="네이트 홈페이지 열기"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#898698"/>
+    <Button
+        android:id="@+id/btn2"
+        android:text="911 응급전화 걸기"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#6dbe42"/>
+    <Button
+        android:id="@+id/btn3"
+        android:text="갤러리 열기"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ee2b29"/>
+    <Button
+        android:id="@+id/btn4"
+        android:text="끝내기"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ebe94e"/>
+</LinearLayout>
