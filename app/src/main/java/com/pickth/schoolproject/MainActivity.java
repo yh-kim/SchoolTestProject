@@ -26,6 +26,7 @@ public class MainActivity  extends AppCompatActivity {
         dataList.add(new ProjectListItem("EditTextTest","0316", "간단한 계산기 예제"));
         dataList.add(new ProjectListItem("ImageViewTest","0323", "간단한 이미지, 라디오버튼 예제"));
         dataList.add(new ProjectListItem("CreateLayout","0323", "간단한 레이아웃 만들기 예제"));
+        dataList.add(new ProjectListItem("RelativeLayoutTest","0323", "간단한 relative 레이아웃 예제"));
     }
 
     private void initializeToolbar() {

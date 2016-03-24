@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/relativelayout_test_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호" />
+
+    <EditText
+        android:id="@+id/relativelayout_test_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="test"
+        android:layout_toRightOf="@+id/relativelayout_test_tv"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="입력"
+        android:layout_below="@+id/relativelayout_test_et"
+        android:layout_toLeftOf="@+id/relativelayout_test_btnClose"
+        android:layout_toStartOf="@+id/relativelayout_test_btnClose"
+        android:id="@+id/button" />
+
+    <Button
+        android:id="@+id/relativelayout_test_btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignRight="@+id/relativelayout_test_et"
+        android:layout_alignEnd="@+id/relativelayout_test_et" />
+</RelativeLayout>

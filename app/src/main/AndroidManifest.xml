@@ -19,6 +19,8 @@
         <activity android:name=".project0316.EditTextTestActivity"></activity>
         <activity android:name=".project0323.ImageViewTestActivity"></activity>
         <activity android:name=".project0323.CreateLayoutActivity"></activity>
+        <activity android:name=".project0323.RelativeLayoutTestActivity"></activity>
+
         <activity android:name=".LoadingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
