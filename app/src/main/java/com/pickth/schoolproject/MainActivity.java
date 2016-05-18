@@ -22,11 +22,18 @@ public class MainActivity  extends AppCompatActivity {
     ArrayList<ProjectListItem> dataList = new ArrayList<>();
 
     private void addData(){
-        dataList.add(new ProjectListItem("ButtonTest","0316", "간단한 인텐트 예제"));
-        dataList.add(new ProjectListItem("EditTextTest","0316", "간단한 계산기 예제"));
-        dataList.add(new ProjectListItem("ImageViewTest","0323", "간단한 이미지, 라디오버튼 예제"));
-        dataList.add(new ProjectListItem("CreateLayout","0323", "간단한 레이아웃 만들기 예제"));
+        dataList.add(new ProjectListItem("BitmapTest","0511", "간단한 포토샵 예제"));
+        dataList.add(new ProjectListItem("TouchEventTest","0511", "간단한 터치 이벤트"));
+        dataList.add(new ProjectListItem("AlertDialogTest","0427", "간단한 다이얼로그 예제"));
+        dataList.add(new ProjectListItem("ContextMenuTest","0427", "간단한 컨텍스트 메뉴 예제"));
+        dataList.add(new ProjectListItem("OptionsMenuTest","0427", "간단한 옵션 메뉴 예제"));
+        dataList.add(new ProjectListItem("DatePickerTest","0330", "간단한 예약 앱 예제"));
+        dataList.add(new ProjectListItem("TableLayoutTest","0330", "간단한 table 레이아웃 예제(계산기)"));
         dataList.add(new ProjectListItem("RelativeLayoutTest","0323", "간단한 relative 레이아웃 예제"));
+        dataList.add(new ProjectListItem("CreateLayout","0323", "간단한 레이아웃 만들기 예제"));
+        dataList.add(new ProjectListItem("ImageViewTest","0323", "간단한 이미지, 라디오버튼 예제"));
+        dataList.add(new ProjectListItem("EditTextTest","0316", "간단한 계산기 예제"));
+        dataList.add(new ProjectListItem("ButtonTest","0316", "간단한 인텐트 예제"));
     }
 
     private void initializeToolbar() {

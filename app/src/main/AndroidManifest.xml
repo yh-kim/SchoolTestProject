@@ -16,10 +16,17 @@
 
         </activity>
 
+        <activity android:name=".project0511.BitmapTestActivity"></activity>
+        <activity android:name=".project0511.TouchEventTestActivity"></activity>
         <activity android:name=".project0316.EditTextTestActivity"></activity>
         <activity android:name=".project0323.ImageViewTestActivity"></activity>
         <activity android:name=".project0323.CreateLayoutActivity"></activity>
         <activity android:name=".project0323.RelativeLayoutTestActivity"></activity>
+        <activity android:name=".project0330.TableLayoutTestActivity"></activity>
+        <activity android:name=".project0330.DatePickerTestActivity"></activity>
+        <activity android:name=".project0427.OptionsMenuTestActivity"></activity>
+        <activity android:name=".project0427.ContextMenuTestActivity"></activity>
+        <activity android:name=".project0427.AlertDialogTestActivity"></activity>
 
         <activity android:name=".LoadingActivity">
             <intent-filter>

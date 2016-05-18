@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu0427item0"
+        android:title="그림회전"></item>
+    <group
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/menu0427Item1"
+            android:title="젤리빈"
+            android:checked="true"></item>
+
+        <item
+            android:id="@+id/menu0427Item2"
+            android:title="킷켓"></item>
+
+        <item
+            android:id="@+id/menu0427Item3"
+            android:title="롤리팝"></item>
+
+    </group>
+</menu>
