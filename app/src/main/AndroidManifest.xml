@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pickth.schoolproject">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -16,6 +17,8 @@
 
         </activity>
 
+        <activity android:name=".project0525.XMLParserTestActivity"></activity>
+        <activity android:name=".project0525.DownHtmlTestActivity"></activity>
         <activity android:name=".project0511.BitmapTestActivity"></activity>
         <activity android:name=".project0511.TouchEventTestActivity"></activity>
         <activity android:name=".project0316.EditTextTestActivity"></activity>

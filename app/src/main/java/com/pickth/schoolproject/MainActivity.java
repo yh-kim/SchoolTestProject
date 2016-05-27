@@ -22,6 +22,8 @@ public class MainActivity  extends AppCompatActivity {
     ArrayList<ProjectListItem> dataList = new ArrayList<>();
 
     private void addData(){
+        dataList.add(new ProjectListItem("XMLParserTest","0525", "네이버 검색 순위 조회 앱"));
+        dataList.add(new ProjectListItem("DownHtmlTest","0525", "간단한 비동기 방식 인터넷 연결"));
         dataList.add(new ProjectListItem("BitmapTest","0511", "간단한 포토샵 예제"));
         dataList.add(new ProjectListItem("TouchEventTest","0511", "간단한 터치 이벤트"));
         dataList.add(new ProjectListItem("AlertDialogTest","0427", "간단한 다이얼로그 예제"));
