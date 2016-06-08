@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pickth.schoolproject">
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -30,6 +31,7 @@
         <activity android:name=".project0427.OptionsMenuTestActivity"></activity>
         <activity android:name=".project0427.ContextMenuTestActivity"></activity>
         <activity android:name=".project0427.AlertDialogTestActivity"></activity>
+        <activity android:name=".project0608.MusicTestActivity"></activity>
 
         <activity android:name=".LoadingActivity">
             <intent-filter>

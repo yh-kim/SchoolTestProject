@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -22,6 +23,7 @@ public class MainActivity  extends AppCompatActivity {
     ArrayList<ProjectListItem> dataList = new ArrayList<>();
 
     private void addData(){
+        dataList.add(new ProjectListItem("MusicTest","0608", "간단한 음악 재생 예제"));
         dataList.add(new ProjectListItem("XMLParserTest","0525", "네이버 검색 순위 조회 앱"));
         dataList.add(new ProjectListItem("DownHtmlTest","0525", "간단한 비동기 방식 인터넷 연결"));
         dataList.add(new ProjectListItem("BitmapTest","0511", "간단한 포토샵 예제"));
@@ -68,6 +70,31 @@ public class MainActivity  extends AppCompatActivity {
                     startActivity(intent);
                 } catch (ClassNotFoundException e) {
                     Toast.makeText(getApplicationContext(),"존재하지 않는 프로젝트", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        lvProject.setOnScrollListener(new AbsListView.OnScrollListener() {
+            boolean hideToolBar = false;
+
+            @Override
+            public void onScrollStateChanged(AbsListView absListView, int i) {
+                if(hideToolBar){
+                    mToolBar.setVisibility(View.INVISIBLE);
+//                    mToolBar.animate().translationY(-mToolBar.getBottom()).setInterpolator(new AccelerateInterpolator()).start();
+                }else{
+                    mToolBar.setVisibility(View.VISIBLE);
+//                    mToolBar.animate().translationY(0).setInterpolator(new DecelerateInterpolator()).start();
+                }
+            }
+
+            @Override
+            public void onScroll(AbsListView absListView, int i, int i1, int dy) {
+                if (dy > 20) {
+                    hideToolBar = true;
+
+                } else if (dy < -5) {
+                    hideToolBar = false;
                 }
             }
         });
